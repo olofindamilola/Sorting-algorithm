@@ -1,0 +1,14 @@
+When performing insertion sort, you start with the second element in the array and compare it to the first element. If the second element is smaller, you swap them. Then you move on to the third element and compare it to the first and second elements, swapping as necessary to put it in the correct position. You continue this process for each subsequent element until the entire array is sorted.
+
+ During each iteration of the algorithm, we consider the first i-1 elements of the array as a sorted sequence, and we pick the i-th element and insert it into the correct position in the sorted sequence. We repeat this process for each element in the array until the entire array is sorted.
+
+ Insertion sort is a simple sorting algorithm that sorts an array of elements by iteratively inserting each element into its correct position within a sorted subarray of the elements to its left. It works by comparing each element with the elements before it, and inserting it into the correct position within the sorted subarray.
+
+Here's the step-by-step process for insertion sort:
+
+Iterate through the array from left to right.
+For each element, compare it with the elements before it in the sorted subarray.
+If the element is smaller than the previous element, swap it with the previous element.
+Repeat step 3 until the element is in its correct position within the sorted subarray.
+Move on to the next element in the array and repeat steps 2-4 until the entire array is sorted.
+Insertion sort has a worst-case time complexity of O(n^2), making it inefficient for large arrays. However, it has a best-case time complexity of O(n), which makes it useful for small arrays or arrays that are already partially sorted. It also has the advantage of being an in-place sorting algorithm, meaning it doesn't require any additional memory to sort the array.
